@@ -2,7 +2,7 @@
 # using: 
 # Revision: 1.19 
 # Source: /local/reps/CMSSW/CMSSW/Configuration/Applications/python/ConfigBuilder.py,v 
-# with command line options: PFNanoProduction/Configuration/EndcapPartGun_cff.py -s GEN,SIM,DIGI:pdigi_valid,L1TrackTrigger,L1,DIGI2RAW,HLT:@fake2,RAW2DIGI,RECO,RECOSIM,PFNANO:DPGAnalysis/HGCalNanoAOD/nanoHGCML_cff.nanoHGCMLRecoSequence --conditions auto:phase2_realistic_T21 --datatier NANOAODSIM --eventcontent NANOAODSIM --geometry Extended2026D77 --era Phase2C11I13M9 --python_filename scripts/../configs/EndcapPartGun_nPart10_GENToNANO_cff.py --fileout nanoML.root --customise_commands process.generator.PGunParameters.nParticles=10 -n 8 --nThreads 8
+# with command line options: HGCalNanoProduction/Configuration/EndcapPartGun_cff.py -s GEN,SIM,DIGI:pdigi_valid,L1TrackTrigger,L1,DIGI2RAW,HLT:@fake2,RAW2DIGI,RECO,RECOSIM,PFNANO:DPGAnalysis/HGCalNanoAOD/nanoHGCML_cff.nanoHGCMLRecoSequence --conditions auto:phase2_realistic_T21 --datatier NANOAODSIM --eventcontent NANOAODSIM --geometry Extended2026D77 --era Phase2C11I13M9 --python_filename scripts/../configs/EndcapPartGun_nPart10_GENToNANO_cff.py --fileout nanoML.root --customise_commands process.generator.PGunParameters.nParticles=10 -n 8 --nThreads 8
 import FWCore.ParameterSet.Config as cms
 
 from Configuration.Eras.Era_Phase2C11I13M9_cff import Phase2C11I13M9
@@ -74,7 +74,7 @@ process.options = cms.untracked.PSet(
 
 # Production Info
 process.configurationMetadata = cms.untracked.PSet(
-    annotation = cms.untracked.string('PFNanoProduction/Configuration/EndcapPartGun_cff.py nevts:8'),
+    annotation = cms.untracked.string('HGCalNanoProduction/Configuration/EndcapPartGun_cff.py nevts:8'),
     name = cms.untracked.string('Applications'),
     version = cms.untracked.string('$Revision: 1.19 $')
 )
