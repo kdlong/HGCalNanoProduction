@@ -2,6 +2,7 @@ dir=$(dirname "$0")
 nPart=10
 cmsDriver.py HGCalNanoProduction/Configuration/EndcapPartGun_cff.py \
     -s GEN,SIM,DIGI:pdigi_valid,L1TrackTrigger,L1,DIGI2RAW,HLT:@fake2,RAW2DIGI,RECO,RECOSIM,PFNANO:DPGAnalysis/HGCalNanoAOD/nanoHGCML_cff.nanoHGCMLRecoSequence \
+    --procModifier fineCalo \
     --conditions auto:phase2_realistic_T21 \
     --datatier NANOAODSIM \
     --eventcontent NANOAODSIM \
