@@ -7,7 +7,7 @@ cmsDriver.py PFNanoProduction/Configuration/EndcapPartGun_cff.py \
     --conditions auto:phase2_realistic_T21 \
     --datatier GEN-SIM-DIGI-RAW \
     --eventcontent FEVTDEBUGHLT \
-    --geometry Extended2026D77 \
+    --geometry Extended2026D93 \
     --era Phase2C11I13M9 \
     --fileout file:step2.root \
     --python_filename ${dir}/../configs/EndcapPartGun_nPart${nPart}_cff.py \
