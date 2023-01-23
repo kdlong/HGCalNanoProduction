@@ -18,6 +18,7 @@ scram b -j8 # Or as many cores as ya got, it checks out a lot of stuff
 
 git clone git@github.com:kdlong/HGCalNanoProduction.git
 cd HGCalNanoProduction
+scram b
 bash scripts/genToNano.sh
 ```
 
